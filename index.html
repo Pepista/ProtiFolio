@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - IT Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hlavička -->
+    <header>
+        <div class="container">
+            <h1>Petr Čechák</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="active">O mně</a></li>
+                    <li><a href="#skills">Dovednosti</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Úvodní sekce (Hero) -->
+    <section id="hero" class="fade-in">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Toto je moje portfolio</h2>
+                <p>Jsem student IT oboru, zaměřuji se na vývoj webových aplikací a softwaru.</p>
+                <p>Mám zájem o programování, algoritmy a nové technologie.</p>
+                <a href="#projects" class="btn">Moje projekty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- O mně -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>O mně</h2>
+            <p>Ahoj! Jsem student informačních technologií se zaměřením na webový vývoj. Baví mě programování a neustále se učím nové technologie, které mi pomáhají rozvíjet se v tomto odvětví. Mým cílem je vytvářet efektivní, uživatelsky přívětivé a moderní aplikace.</p>
+        </div>
+    </section>
+
+    <!-- Dovednosti -->
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <h2>Moje dovednosti</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <h3>Webový vývoj</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js</p>
+                </div>
+                <div class="skill">
+                    <h3>Programovací jazyky</h3>
+                    <p>Python, Java, C++</p>
+                </div>
+                <div class="skill">
+                    <h3>Databáze</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="skill">
+                    <h3>Verzování kódu</h3>
+                    <p>Git, GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projekty -->
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <h2>Projekty</h2>
+            <div class="projects-gallery">
+                <div class="project-item">
+                    <h3>Projekt 1: Webová aplikace</h3>
+                    <p>Popis projektu – jednoduchá webová aplikace pro správu úkolů postavená na Reactu a Node.js.</p>
+                    <a href="#" class="btn">Podívejte se na projekt</a>
+                </div>
+                <div class="project-item">
+                    <h3>Projekt 2: Chatovací aplikace</h3>
+                    <p>Popis projektu – real-time chatovací aplikace s funkcemi jako zasílání zpráv a upozornění, postavená na Socket.io a Express.</p>
+                    <a href="#" class="btn">Podívejte se na projekt</a>
+                </div>
+                <div class="project-item">
+                    <h3>Projekt 3: Automatizace úloh</h3>
+                    <p>Popis projektu – Python skript pro automatické zpracování dat a odesílání emailů.</p>
+                    <a href="#" class="btn">Podívejte se na projekt</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Kontaktujte mě</h2>
+            <form action="#">
+                <input type="text" placeholder="Vaše jméno" required>
+                <input type="email" placeholder="Váš email" required>
+                <textarea placeholder="Vaše zpráva" rows="5" required></textarea>
+                <button type="submit" class="btn">Odeslat</button>
+            </form>
+            <div class="social-media">
+                <a href="#" class="social-btn">GitHub</a>
+                <a href="#" class="social-btn">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patička -->
+    <footer>
+        <p>&copy; 2024 IT Student. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

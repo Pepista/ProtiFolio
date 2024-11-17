@@ -1,0 +1,261 @@
+/* Globální styly */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #4f9b84, #1f5e56); /* Tmavší zelená až ještě tmavší zelená */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Zarovnání na střed */
+    color: #000; /* Černý text pro lepší kontrast s pozadím */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+/* Hlavička (header) */
+header {
+    background-color: #1f5e56; /* Tmavší zelená pro oddělení hlavičky */
+    color: #fff; /* Bílý text v hlavičce pro lepší kontrast */
+    padding: 20px 0;
+    width: 100%;
+    text-align: center; /* Text v hlavičce zarovnaný na střed */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* Bílý text pro odkazy v navigaci */
+    font-weight: bold;
+    text-decoration: none;
+    position: relative; /* Pro animace na podtržení */
+    padding: 5px 0; /* Malý prostor nad a pod textem */
+    transition: color 0.3s ease;
+}
+
+/* Animace podtržení odkazu */
+header nav ul li a::after {
+    content: ''; /* Vytváří prázdný obsah pro pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2a9d8f; /* Světlejší zelená pro podtržení */
+    transition: width 0.3s ease; /* Plynulý efekt pro změnu šířky */
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* Při najetí na odkaz se podtržení roztáhne na celou šířku */
+}
+
+header nav ul li a:hover {
+    color: #2a9d8f; /* Změna barvy textu při najetí */
+}
+
+/* Úvodní sekce (Hero) */
+#hero {
+    display: flex;
+    justify-content: center; /* Zarovnání na střed */
+    align-items: center;
+    padding: 100px 20px;
+    background: transparent;
+    text-align: center; /* Text zarovnaný na střed */
+    flex-wrap: wrap; /* Umožňuje přizpůsobení pro menší obrazovky */
+}
+
+#hero .hero-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#hero .hero-image {
+    flex: 0 0 40%; /* Obrázek bude zabírat 40% šířky */
+    text-align: center; /* Obrázek na střed */
+}
+
+#hero .hero-image img {
+    width: 100%; /* Obrázek se přizpůsobí šířce kontejneru */
+    height: auto; /* Zajišťuje správný poměr stran */
+    border-radius: 10px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000; /* Černý text */
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #000; /* Černý text */
+}
+
+/* Reakce na mobilní zařízení */
+@media (max-width: 768px) {
+    /* Zajišťuje, že sekce 'Hero' bude vertikálně zarovnaná na mobilních zařízeních */
+    #hero {
+        flex-direction: column; /* Na menších obrazovkách se text a obrázek uspořádají vertikálně */
+        text-align: center; /* Text bude na střed */
+    }
+
+    #hero .hero-text,
+    #hero .hero-image {
+        flex: none;
+        width: 100%; /* Zajistí, že text i obrázek zabírají celou šířku */
+        padding: 0;
+    }
+
+    #hero .hero-image img {
+        width: 100%; /* Obrázek bude mít šířku 100% */
+        height: auto;
+    }
+}
+
+/* Dovednosti */
+#skills {
+    padding: 50px 20px;
+    background: transparent;
+    border-bottom: 2px solid #fff; /* Jemná bílá čára mezi sekcemi */
+    width: 100%;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #2a9d8f; /* Tmavší zelená pozadí pro boxy */
+    padding: 20px;
+    border-radius: 5px;
+    width: 23%;
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Jemnější stín */
+    transition: transform 0.2s ease; /* Mírný efekt transformace při hoveru */
+    text-align: center;
+}
+
+.skill:hover {
+    transform: scale(1.05); /* Mírné zvětšení při hoveru */
+}
+
+.skill h3 {
+    color: #000; /* Černý text pro nadpisy */
+}
+
+/* Projekty */
+#projects {
+    padding: 50px 20px;
+    background: transparent;
+    border-bottom: 2px solid #fff; /* Jemná bílá čára mezi sekcemi */
+    width: 100%;
+}
+
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #2a9d8f; /* Tmavší zelená pozadí pro boxy */
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Jemnější stín */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Mírný efekt transformace a stínu při hoveru */
+    text-align: center;
+}
+
+.project-item h3 {
+    color: #000; /* Černý text pro nadpisy projektů */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Mírné vytažení při hoveru */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Jemnější a výraznější stín */
+}
+
+/* Kontakt */
+#contact {
+    padding: 30px 20px; /* Menší padding pro zmenšení sekce */
+    text-align: center;
+    background: transparent;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Zúžení šířky formuláře */
+    margin: 0 auto; /* Zarovnání na střed */
+}
+
+form input, form textarea {
+    width: 100%; /* Zvětšení šířky na 100% */
+    max-width: 400px; /* Maximální šířka pro formulářová pole */
+    margin: 10px 0;
+    padding: 8px; /* Menší padding pro zmenšení polí */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 60%; /* Zmenšení šířky tlačítka */
+    padding: 8px; /* Menší padding pro zmenšení velikosti tlačítka */
+    margin-top: 10px;
+    background-color: #264653; /* Tmavší zelená pro tlačítka */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Menší velikost písma */
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2a9d8f;
+}
+
+/* Sociální média */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px; /* Zmenšení velikosti tlačítek */
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Patička (footer) */
+footer {
+    background-color: #1f5e56; /* Tmavší zelená pro oddělení patičky */
+    color: #fff; /* Bílý text pro lepší kontrast */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 100%;
+}
