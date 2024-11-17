@@ -3,25 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nás</title>
+    <title>Kontakt - Petr Čechák</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Hlavička -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="about.html" class="active">O nás</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html">
+                <h1 style="color: black;">Petr Čechák</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">O mně</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>O nás</h1>
-        <p>Jsme skvělý tým tvořící webové stránky.</p>
-    </main>
+
+    <!-- Sekce Kontakt -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Kontaktujte mě</h2>
+            <p>Pokud máte jakékoli otázky nebo návrhy na spolupráci, neváhejte se na mě obrátit. Rád bych se dozvěděl více o vašich projektech, nebo se podílel na zajímavých výzvách, které vám pomohou dosáhnout vašich cílů.</p>
+
+            <h3>Kontaktní formulář</h3>
+            <p>Vyplňte prosím následující formulář, a já se vám co nejdříve ozvu.</p>
+            <form action="submit_contact_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Vaše jméno:</label>
+                    <input type="text" id="name" name="name" placeholder="Například: Jan Novák" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Váš email:</label>
+                    <input type="email" id="email" name="email" placeholder="Například: jan.novak@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Vaše zpráva:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Co vás zajímá? Jak vám mohu pomoci?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Odeslat zprávu</button>
+            </form>
+
+            <h3>Další způsoby kontaktu</h3>
+            <p>Kromě tohoto formuláře mě můžete kontaktovat i jinými způsoby:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:petr.cechak@email.com">petr.cechak@email.com</a></li>
+                <li><strong>Telefon:</strong> +420 123 456 789</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/petrcechak" target="_blank">github.com/petrcechak</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/petrcechak" target="_blank">linkedin.com/in/petrcechak</a></li>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/petrcechak" target="_blank">twitter.com/petrcechak</a></li>
+            </ul>
+
+            <h3>Moje preferované kanály</h3>
+            <p>Rád používám GitHub pro technické otázky, kódové spolupráce nebo projektové diskuze. LinkedIn je skvělý pro profesní síťování a rozvoj kariéry. Email je ideální pro formální komunikaci nebo návrhy na spolupráci. A pokud chcete pravidelně dostávat aktualizace o mých projektech, sledujte mě na Twitteru.</p>
+
+            <h3>Projekty a spolupráce</h3>
+            <p>Pokud jste firma nebo jednotlivec, který hledá vývojáře pro projekt, klidně se mi ozvěte. Zajímám se o:</p>
+            <ul>
+                <li>Vývoj webových aplikací</li>
+                <li>Backendové vývoje a integrace API</li>
+                <li>Vývoj v JavaScriptu, Pythonu a Reactu</li>
+                <li>Automatizace a optimalizace procesů</li>
+                <li>Vytváření uživatelsky přívětivých rozhraní a designů</li>
+            </ul>
+
+            <p>Jsem otevřen novým projektům a vždy hledám výzvy, které mi pomohou se rozvíjet. Pokud máte nějaký zajímavý projekt, na kterém byste chtěli spolupracovat, neváhejte mě kontaktovat a probereme možnosti.</p>
+
+            <h3>Odezva a rychlost odpovědí</h3>
+            <p>Všechny zprávy se snažím vyřizovat co nejrychleji. Obvykle odpovídám do 24 hodin, ale může se stát, že odpověď z důvodu vysoké pracovní zátěže potrvá o něco déle. Děkuji za pochopení.</p>
+
+            <h3>Chcete být součástí mé profesní sítě?</h3>
+            <p>Pokud hledáte někoho, kdo vám pomůže s projekty v oblasti IT nebo hledáte spolupráci v oblasti vývoje webových aplikací, jsem otevřen možnostem. Kontaktujte mě a domluvme se na podrobnostech!</p>
+
+            <h3>Pokud se chcete jenom zeptat...</h3>
+            <p>Pokud máte nějaký jednoduchý dotaz nebo se chcete jenom poradit ohledně technologie, nebojte se napsat. Mám rád komunikaci s lidmi, kteří mají podobné zájmy jako já. Nebojte se ozvat!</p>
+        </div>
+    </section>
+
+    <!-- Patička -->
     <footer>
-        <p>&copy; 2024 Moje Webová Stránka</p>
+        <p>&copy; 2024 Petr Čechák. Všechna práva vyhrazena.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

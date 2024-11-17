@@ -3,25 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nás</title>
+    <title>O mně - Petr Čechák</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Hlavička -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="about.html" class="active">O nás</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html">
+                <h1 style="color: black;">Petr Čechák</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html" class="active">O mně</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>O nás</h1>
-        <p>Jsme skvělý tým tvořící webové stránky.</p>
-    </main>
+
+    <!-- Sekce O mně -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>O mně</h2>
+            <p>Ahoj! Jsem Petr Čechák, student informačních technologií se specializací na vývoj webových aplikací. Mám velký zájem o programování, algoritmy a nové technologie. Mým cílem je vytvářet aplikace, které jsou nejen uživatelsky přívětivé, ale také efektivní a moderní.</p>
+
+            <h3>Moje IT cesta</h3>
+            <p>Moje cesta v IT začala už na střední škole, kde jsem se poprvé setkal s programováním. Fascinovalo mě, jak se dá pomocí kódu ovládat technologie a vytvářet věci, které mají reálný dopad. V průběhu studia jsem se soustředil na webový vývoj a vytvořil několik projektů, které mi pomohly prohloubit mé znalosti a dovednosti.</p>
+
+            <h3>Vzdělání</h3>
+            <p>V současné době studuji na vysoké škole obor Informační technologie, kde se zaměřuji na vývoj webových aplikací. Jsem nadšený z možností, které technologie nabízí, a neustále se učím nové programovací jazyky a nástroje. Mezi mé oblíbené technologie patří HTML, CSS, JavaScript, React a Node.js.</p>
+
+            <h3>Profesní zkušenosti</h3>
+            <p>V rámci mého studia jsem měl možnost se podílet na několika projektech, jak samostatně, tak i v týmu. Pracoval jsem na několika webových aplikacích, které se zaměřovaly na zlepšení uživatelského zážitku a automatizaci některých procesů. Kromě toho jsem také pracoval s databázemi, jako je MySQL a MongoDB, a získal zkušenosti v oblasti verzování kódu pomocí Git a GitHubu.</p>
+
+            <h3>Technické dovednosti</h3>
+            <ul>
+                <li><strong>Webový vývoj:</strong> HTML, CSS, JavaScript, React, Node.js</li>
+                <li><strong>Programovací jazyky:</strong> Python, Java, C++</li>
+                <li><strong>Databáze:</strong> MySQL, MongoDB</li>
+                <li><strong>Verzování kódu:</strong> Git, GitHub</li>
+                <li><strong>Další dovednosti:</strong> Agile, Docker, RESTful API</li>
+            </ul>
+
+            <h3>Plány do budoucna</h3>
+            <p>Do budoucna bych se rád specializoval na vývoj moderních webových a mobilních aplikací. Mým cílem je pokračovat v rozvoji svých dovedností v oblasti JavaScriptu a Reactu, a také se více zaměřit na návrh a optimalizaci backendových řešení pomocí Node.js a dalších nástrojů.</p>
+        </div>
+    </section>
+
+    <!-- Patička -->
     <footer>
-        <p>&copy; 2024 Moje Webová Stránka</p>
+        <p>&copy; 2024 Petr Čechák. Všechna práva vyhrazena.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
